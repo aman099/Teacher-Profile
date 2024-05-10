@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
+    <!-- Font-Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--  -->
+    <!-- Pari CSS -->
+    <link rel="stylesheet" href="./beauty/pari.css" />
+    <link rel="stylesheet" href="./beauty/components/navbar-pari.css" />
+    <link rel="stylesheet" href="./beauty/layout/container.css" />
+    <link rel="stylesheet" href="./beauty/helpers/flexbox.css" />
+    <link rel="stylesheet" href="./beauty/elements/button-pari.css" />
+    <!--  -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    <title>Teacher Profile</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <!-- Navbar -->
+    <div class="navbar-container container is-fullhd">
+      <nav id="nav" class="container is-fullhd">
+        <header>
+          <div class="hamburger-icon-container">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <img class="main-logo-img" src="./assets/logo.png" />
+          <img
+            class="backup-img"
+            src="./assets/logo-small.png"
+            alt="Logo small"
+          />
+          <div class="left-nav display-flex-2x2-wrap is-align-items-center">
+            <span class="bars"><i class="fa-solid fa-bars"></i></span>
+            <div class="input-cont">
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              <input type="text" placeholder="Search.." />
+            </div>
+          </div>
+        </header>
+        <!-- <input type="checkbox" id="nav-check" /> -->
+        <!-- <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div> -->
+        <ul>
+          <!-- <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Products</a></li> -->
+          <li>
+            <details class="dropdown">
+              <summary>
+                <img
+                  src="./assets/icons/flags/flags/in.png"
+                  alt="Indian flag"
+                />
+              </summary>
+              <ul role="nav-drop">
+                <li>
+                  <img
+                    src="./assets/icons/flags/flags/in.png"
+                    alt="Indian flag"
+                  />
+                  <a href="#">Indian</a>
+                </li>
+                <li>
+                  <img
+                    src="./assets/icons/flags/flags/fr.png"
+                    alt="France flag"
+                  /><a href="#">Frances</a>
+                </li>
+                <li>
+                  <img
+                    src="./assets/icons/flags/flags/ar.png"
+                    alt="Argentina flag"
+                  /><a href="#">Argentina</a>
+                </li>
+                <li>
+                  <img
+                    src="./assets/icons/flags/flags/us.png"
+                    alt="America flag"
+                  /><a href="#">U.S.A</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details class="dropdown">
+              <summary><i class="fa-regular fa-bell"></i></summary>
+              <ul role="nav-drop">
+                <div class="nav-drop-heading">
+                  <h2>Notifications</h2>
+                  <p>clear all</p>
+                </div>
+                <li>
+                  <div class="pro-img">
+                    <img src="./assets/profiles/avatar-05.jpg" alt="" />
+                  </div>
+                  <div class="pro-details">
+                    <p>
+                      <span>priyanshi</span> has approved
+                      <span>your estimate</span>
+                    </p>
+                    <p>4 mins ago</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="pro-img">
+                    <img src="./assets/profiles/avatar-02.jpg" alt="" />
+                  </div>
+                  <div class="pro-details">
+                    <p>
+                      <span>International Software Inc</span> has sent you a
+                      invoice in the amount of
+                      <span>$4</span>
+                    </p>
+                    <p>6 mins ago</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="pro-img">
+                    <img src="./assets/profiles/avatar-04.jpg" alt="" />
+                  </div>
+                  <div class="pro-details">
+                    <p>
+                      <span>John Hendry</span> sent a cancellation request
+                      <span>Apple iPhone XR</span>
+                    </p>
+                    <p>8 mins ago</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="pro-img">
+                    <img src="./assets/profiles/avatar-06.jpg" alt="" />
+                  </div>
+                  <div class="pro-details">
+                    <p>
+                      <span>Mercury Software Inc</span> added a new product
+                      <span>Apple MacBook Pro</span>
+                    </p>
+                    <p>12 mins ago</p>
+                  </div>
+                </li>
+                <li class="clear-msg">
+                  <p>All Notifications cleared</p>
+                </li>
+                <div class="nav-drop-heading nav-drop-heading-2">
+                  <h2>View all notifications</h2>
+                </div>
+              </ul>
+            </details>
+          </li>
+          <!--  -->
+          <li class="main-pro">
+            <details class="dropdown">
+              <summary>
+                <div
+                  class="main-profile display-flex-2x2-wrap is-align-items-flex-start"
+                >
+                  <div class="main-pro-img">
+                    <img
+                      src="./assets/profiles/avatar-01.jpg"
+                      alt="Main Profile image"
+                    />
+                  </div>
+                  <div class="main-pro-right">
+                    <h5>Rahul Raj</h5>
+                    <p>Administrator</p>
+                  </div>
+                  <div class="chevron-arr">
+                    <span><i class="fa-solid fa-chevron-down"></i></span>
+                  </div>
+                </div>
+                <div class="substitute-pro-img-cont">
+                  <img
+                    class="subs-pro-img"
+                    src="./assets/profiles/avatar-01.jpg"
+                    alt="Main Profile image"
+                  />
+                </div>
+              </summary>
+              <ul role="nav-drop">
+                <li>
+                  <div class="main-profile main-profile-2">
+                    <div class="main-pro-img">
+                      <img
+                        src="./assets/profiles/avatar-01.jpg"
+                        alt="Main Profile image"
+                      />
+                    </div>
+                    <div class="main-pro-right">
+                      <h5>Rahul Raj</h5>
+                      <p>Administrator</p>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">Log out</a></li>
+              </ul>
+            </details>
+          </li>
+          <!--  -->
+        </ul>
+      </nav>
+    </div>
+
+    <!--  -->
+
+    <!-- Sidebar -->
+    <div class="sidebar-container container is-fullhd display-flex-2x2-wrap">
+      <!-- Sidebar -->
+      <aside id="sidebar" class="sidebar">
+        <nav>
+          <h5>Main Menu</h5>
+          <ul>
+            <div class="revealer">
+              <li>
+                <div class="menus-cont">
+                  <span><i class="fa-solid fa-gauge"></i></span>
+                  <a href="#">Dashboard</a>
+                </div>
+                <span><i class="fa-solid fa-chevron-right"></i></span>
+              </li>
+              <ul class="reveal reveal-1">
+                <li>Admin Dashboard</li>
+                <li>Teacher Dashboard</li>
+                <li>Student Dashboard</li>
+              </ul>
+            </div>
+            <div class="revealer">
+              <li>
+                <div class="menus-cont">
+                  <span><i class="fa-solid fa-graduation-cap"></i></span>
+                  <a href="#">Students</a>
+                </div>
+                <span><i class="fa-solid fa-chevron-right"></i></span>
+              </li>
+              <ul class="reveal reveal-2">
+                <li>Student List</li>
+                <li>Student View</li>
+                <li>Student Add</li>
+                <li>Student Edit</li>
+              </ul>
+            </div>
+            <div class="revealer">
+              <li>
+                <div class="menus-cont">
+                  <span><i class="fa-solid fa-chalkboard-user"></i></span>
+                  <a href="#">Teachers</a>
+                </div>
+                <span><i class="fa-solid fa-chevron-right"></i></span>
+              </li>
+              <ul class="reveal reveal-3">
+                <li>Teacher List</li>
+                <li>Teacher View</li>
+                <li>Teacher Add</li>
+                <li>Teacher Edit</li>
+              </ul>
+            </div>
+            <div class="revealer">
+              <li>
+                <div class="menus-cont">
+                  <span><i class="fa-solid fa-building"></i></span>
+                  <a href="#">Departments</a>
+                </div>
+                <span><i class="fa-solid fa-chevron-right"></i></span>
+              </li>
+              <ul class="reveal reveal-4">
+                <li>Department List</li>
+                <li>Department Add</li>
+                <li>Department Edit</li>
+              </ul>
+            </div>
+            <div class="revealer">
+              <li>
+                <div class="menus-cont">
+                  <span><i class="fa-solid fa-book-open-reader"></i></span>
+                  <a href="#">Subjects</a>
+                </div>
+                <span><i class="fa-solid fa-chevron-right"></i></span>
+              </li>
+              <ul class="reveal reveal-5">
+                <li>Subject List</li>
+                <li>Subject Add</li>
+                <li>Subject Edit</li>
+              </ul>
+            </div>
+            <div class="revealer">
+              <li>
+                <div class="menus-cont">
+                  <span><i class="fa-solid fa-clipboard"></i></span>
+                  <a href="#">Invoices</a>
+                </div>
+                <span><i class="fa-solid fa-chevron-right"></i></span>
+              </li>
+              <ul class="reveal reveal-6">
+                <li>Invoices List</li>
+                <li>Invoices Grid</li>
+                <li>Add Invoices</li>
+                <li>Edit Invoices</li>
+                <li>Invoices Details</li>
+              </ul>
+            </div>
+          </ul>
+          <h5>Management</h5>
+          <ul>
+            <div class="revealer">
+              <li>
+                <div class="menus-cont">
+                  <span><i class="fa-solid fa-file-invoice"></i></span>
+                  <a href="#">Accounts</a>
+                </div>
+                <span><i class="fa-solid fa-chevron-right"></i></span>
+              </li>
+              <ul class="reveal">
+                <li>Fees Collection</li>
+                <li>Expenses</li>
+                <li>Salary</li>
+              </ul>
+            </div>
+            <li>
+              <div class="menus-cont">
+                <span><i class="fa-solid fa-gift"></i></span>
+                <a href="#">Holiday</a>
+              </div>
+            </li>
+            <li>
+              <div class="menus-cont">
+                <span><i class="fa-solid fa-money-bill-wave"></i></span>
+                <a href="#">Fees</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- <div class="toggle-sidebar-btn">&#9776;</div> -->
+      <!-- Hero section -->
+      <main id="main" class="">
+        <div
+          class="heading-container display-flex-2x2-wrap is-justify-content-space-between is-align-items-flex-end"
+        >
+          <h4>Teacher details</h4>
+          <p class=""><span>Teachers</span> / Teachers Details</p>
+        </div>
+        <div class="hero-section stars">
+          <div
+            class="hero-sec-heading display-flex-2x2-wrap is-justify-content-space-between is-align-items-flex-start"
+          >
+            <h5>Profile</h5>
+            <p>
+              <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+            </p>
+          </div>
+          <div class="actual-profile-header">
+            <div class="bg-img-container">
+              <img
+                src="./assets/profile-bg.jpg"
+                alt="Teacher Profile background image"
+              />
+            </div>
+            <div
+              class="actual-profile-info display-flex-2x2-wrap is-justify-content-space-evenly is-align-items-center"
+            >
+              <div class="dp-grand-container">
+                <div class="actual-dp">
+                  <img src="./assets/profiles/avatar-18.jpg" alt="Profile DP" />
+                </div>
+                <div class="name-container">
+                  <h5>Prerna Kapoor</h5>
+                  <p>Electronics</p>
+                </div>
+              </div>
+
+              <div class="followers-grand-cont display-flex-2x2-wrap">
+                <div class="followers-cont">
+                  <p>Followers</p>
+                  <h5>2850</h5>
+                </div>
+                <div class="followers-cont">
+                  <p>Followers</p>
+                  <h5>2850</h5>
+                </div>
+                <div class="followers-cont">
+                  <p>Followers</p>
+                  <h5>2850</h5>
+                </div>
+              </div>
+              <div class="btn-grand-container display-flex-2x2-wrap">
+                <div class="btn-container">
+                  <button class="primary-btn">Follow</button>
+                </div>
+                <div class="btn-container btn-container-2">
+                  <button class="primary-btn">Message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="actual-details-container">
+          <div class="personal-det">
+            <div class="personal-det-heading">
+              <h5>Personal Details:</h5>
+            </div>
+            <ul class="display-flex-2x2-wrap is-flex-direction-column">
+              <li class="display-flex-2x2-wrap is-align-items-flex-start">
+                <div class="icon">
+                  <span><i class="fa-regular fa-user"></i></span>
+                </div>
+                <div class="details">
+                  <h5>Name</h5>
+                  <p>Prerna Kapoor</p>
+                </div>
+              </li>
+              <li class="display-flex-2x2-wrap is-align-items-flex-start">
+                <div class="icon">
+                  <span><i class="fa-regular fa-building"></i></span>
+                </div>
+                <div class="details">
+                  <h5>Department</h5>
+                  <p>Electronics</p>
+                </div>
+              </li>
+              <li class="display-flex-2x2-wrap is-align-items-flex-start">
+                <div class="icon">
+                  <span><i class="fa-solid fa-phone"></i></span>
+                </div>
+                <div class="details">
+                  <h5>Mobile</h5>
+                  <p>+21 510-237-1901</p>
+                </div>
+              </li>
+              <li class="display-flex-2x2-wrap is-align-items-flex-start">
+                <div class="icon">
+                  <span><i class="fa-regular fa-envelope"></i></span>
+                </div>
+                <div class="details">
+                  <h5>Email</h5>
+                  <p>
+                    <a href="#">[email protected]</a>
+                  </p>
+                </div>
+              </li>
+              <li class="display-flex-2x2-wrap is-align-items-flex-start">
+                <div class="icon">
+                  <span><i class="fa-solid fa-venus"></i></span>
+                </div>
+                <div class="details">
+                  <h5>Gender</h5>
+                  <p>Female</p>
+                </div>
+              </li>
+              <li class="display-flex-2x2-wrap is-align-items-flex-start">
+                <div class="icon">
+                  <span><i class="fa-regular fa-calendar"></i></span>
+                </div>
+                <div class="details">
+                  <h5>Date of Birth</h5>
+                  <p>12 June 1995</p>
+                </div>
+              </li>
+              <li class="display-flex-2x2-wrap is-align-items-flex-start">
+                <div class="icon">
+                  <span><i class="fa-solid fa-language"></i></span>
+                </div>
+                <div class="details">
+                  <h5>Language</h5>
+                  <p>English, French, Bangla</p>
+                </div>
+              </li>
+              <li class="display-flex-2x2-wrap is-align-items-flex-start">
+                <div class="icon">
+                  <span><i class="fa-solid fa-location-dot"></i></span>
+                </div>
+                <div class="details">
+                  <h5>Address</h5>
+                  <p>180, Estern Avenue, United States</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="about-me">
+            <div class="about-me-heading">
+              <h5>About Me</h5>
+            </div>
+            <div class="about-me-middle">
+              <h5>Hello, I am Prerna Kapoor</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur officia deserunt mollit anim id est
+                laborum. <br />
+                <br />
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam inventore veritatis et
+                quasi architecto beatae vitae dicta sunt explicabo.
+              </p>
+            </div>
+            <div class="about-me-education">
+              <h5>Education</h5>
+              <ul>
+                <li>
+                  <div class="date">2008 - 2009</div>
+                  <div class="place">
+                    Secondary Schooling at xyz school of secondary education,
+                    Mumbai.
+                  </div>
+                </li>
+                <li>
+                  <div class="date">2011 - 2012</div>
+                  <div class="place">
+                    Higher Secondary Schooling at xyz school of higher secondary
+                    education, Mumbai.
+                  </div>
+                </li>
+                <li>
+                  <div class="date">2012 - 2015</div>
+                  <div class="place">
+                    Bachelor of Science at Abc College of Art and Science,
+                    Chennai.
+                  </div>
+                </li>
+                <li>
+                  <div class="date">2015 - 2017</div>
+                  <div class="place">
+                    Master of Science at Cdm College of Engineering and
+                    Technology, Pune.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="skills">
+            <h5>Skills</h5>
+            <ul>
+              <li>
+                <div
+                  class="skill-desc display-flex-2x2-wrap is-align-items-center is-justify-content-space-between"
+                >
+                  <p>Photoshop</p>
+                  <p>90%</p>
+                </div>
+                <!-- Progress bar -->
+                <div class="progress-bar progress-bar-primary"></div>
+              </li>
+              <li>
+                <div
+                  class="skill-desc display-flex-2x2-wrap is-align-items-center is-justify-content-space-between"
+                >
+                  <p>Code editor</p>
+                  <p>75%</p>
+                </div>
+                <!-- Progress bar -->
+                <div class="progress-bar progress-bar-fill"></div>
+              </li>
+              <li>
+                <div
+                  class="skill-desc display-flex-2x2-wrap is-align-items-center is-justify-content-space-between"
+                >
+                  <p>Illustrator</p>
+                  <p>95%</p>
+                </div>
+                <!-- Progress bar -->
+                <div class="progress-bar progress-bar-fill"></div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <footer id="footer">
+          <div class="footer-container">
+            <p>COPYRIGHT © 2022 DREAMGUYS.</p>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <!--  -->
+  </body>
+</html>
